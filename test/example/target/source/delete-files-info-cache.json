@@ -1,0 +1,35 @@
+{
+    "version": "1.0.0",
+    "files": [
+        {
+            "relativePath": "a.txt",
+            "hash": "0cc175b9c0f1b6a831c399e269772661",
+            "mtimeMs": 1506644493902.2776,
+            "size": 1
+        },
+        {
+            "relativePath": "c-different-content.txt",
+            "hash": "4a8a08f09d37b73795649038408b5f33",
+            "mtimeMs": 1506644565513,
+            "size": 1
+        },
+        {
+            "relativePath": "d-not-in-dest.txt",
+            "hash": "8277e0910d750195b448797616e091ad",
+            "mtimeMs": 1506644595922.6973,
+            "size": 1
+        },
+        {
+            "relativePath": "delete-files-info-cache.json",
+            "hash": "8b91b9fe62672a9e90c91cf2a941cda5",
+            "mtimeMs": 1506727719788.3245,
+            "size": 1003
+        },
+        {
+            "relativePath": "sub-folder/b.txt",
+            "hash": "92eb5ffee6ae2fec3ad71c777531578f",
+            "mtimeMs": 1506644502936.1265,
+            "size": 1
+        }
+    ]
+}
