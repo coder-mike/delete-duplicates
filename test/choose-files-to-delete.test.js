@@ -20,7 +20,10 @@ describe('choose-files-to-delete', function() {
     const actions = chooseFilesToDelete(sourceFiles, destDirs);
     assert.deepEqual(actions, [{
       verb: 'delete',
-      path: 'D:/temp/source/bob.txt',
+      sourceFile: {
+        hash: '123',
+        path: 'D:/temp/source/bob.txt'
+      },
       duplicates: [
         'D:/temp/dest1/bob.txt'
       ]

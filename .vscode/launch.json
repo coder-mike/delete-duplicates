@@ -7,10 +7,12 @@
         "name": "Launch Program",
         "program": "${workspaceRoot}/app.js",
         "args": [
-          "./test/example-dest",
-          "--target", "./test/example-dest/example-source",
-          "--dry"
-        ]
+          "./temp/example/target/source",
+          "--target", "./temp/example/target",
+          "--move-to", "./temp/to-delete",
+          "--silent"
+        ],
+        "protocol": "inspector"
       },
       {
         // https://github.com/TypeStrong/ts-node/issues/46#issuecomment-287508936

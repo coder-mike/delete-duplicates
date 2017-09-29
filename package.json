@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Deletes files in a directory that are not duplicated in another directory",
   "main": "app.js",
+  "bin": "./app.js",
   "scripts": {
     "test": "mocha"
   },
@@ -20,8 +21,10 @@
     "mocha": "^3.5.3",
     "normalize-path": "^2.1.1",
     "progress": "^2.0.0",
+    "prompt-confirm": "^1.2.0",
     "ts-node": "^3.3.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.3",
+    "yesno": "0.0.1"
   },
   "devDependencies": {
     "@types/chai": "^4.0.4"

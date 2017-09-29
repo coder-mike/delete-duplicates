@@ -1,0 +1,69 @@
+{
+    "version": "1.0.0",
+    "path": "./test/example/target",
+    "files": [
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/a.txt",
+            "relativePath": "./test/example/target/a.txt",
+            "hash": "0cc175b9c0f1b6a831c399e269772661",
+            "mtimeMs": 1506644524369.9475,
+            "size": 1
+        },
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/b-different-name.txt",
+            "relativePath": "./test/example/target/b-different-name.txt",
+            "hash": "92eb5ffee6ae2fec3ad71c777531578f",
+            "mtimeMs": 1506644539308.639,
+            "size": 1
+        },
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/c-different-content.txt",
+            "relativePath": "./test/example/target/c-different-content.txt",
+            "hash": "81e9bca1cb40b202a28a1aa2377144a8",
+            "mtimeMs": 1506644550525.3928,
+            "size": 5
+        },
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/delete-files-info-cache.json",
+            "relativePath": "./test/example/target/delete-files-info-cache.json",
+            "hash": "7fb610fd6bcedde5f1908793d1403e87",
+            "mtimeMs": 1506722091860.8555,
+            "size": 3059
+        },
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/e-not-in-source.txt",
+            "relativePath": "./test/example/target/e-not-in-source.txt",
+            "hash": "e1671797c52e15f763380b45e841ec32",
+            "mtimeMs": 1506644608582.4531,
+            "size": 1
+        },
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/source/a.txt",
+            "relativePath": "./test/example/target/source/a.txt",
+            "hash": "0cc175b9c0f1b6a831c399e269772661",
+            "mtimeMs": 1506644493902.2776,
+            "size": 1
+        },
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/source/c-different-content.txt",
+            "relativePath": "./test/example/target/source/c-different-content.txt",
+            "hash": "4a8a08f09d37b73795649038408b5f33",
+            "mtimeMs": 1506644565513,
+            "size": 1
+        },
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/source/d-not-in-dest.txt",
+            "relativePath": "./test/example/target/source/d-not-in-dest.txt",
+            "hash": "8277e0910d750195b448797616e091ad",
+            "mtimeMs": 1506644595922.6973,
+            "size": 1
+        },
+        {
+            "path": "C:/Users/elecm/Dropbox/Projects/delete-duplicates/test/example/target/source/sub-folder/b.txt",
+            "relativePath": "./test/example/target/source/sub-folder/b.txt",
+            "hash": "92eb5ffee6ae2fec3ad71c777531578f",
+            "mtimeMs": 1506644502936.1265,
+            "size": 1
+        }
+    ]
+}
