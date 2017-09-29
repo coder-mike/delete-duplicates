@@ -1,7 +1,7 @@
 {
   "name": "delete-duplicates",
   "version": "1.0.0",
-  "description": "Deletes files in a directory that are not duplicated in another directory",
+  "description": "Deletes files in a directory that are duplicated in another directory",
   "main": "app.js",
   "bin": "./app.js",
   "scripts": {

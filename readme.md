@@ -1,6 +1,6 @@
 # Delete Duplicates
 
-Deletes files in a "source" directory, when they are duplicates of files in a "target" directory.
+Deletes files in a "source" directory, when they are duplicates of files in one or more "target" directories.
 
 The intended use case is for cleaning up old archives (particularly photos). The user deletes anything in an old archive or backup that is also in a newer one. The "left-overs" are files that should be preserved because they weren't found in the newer one.
 
@@ -12,7 +12,7 @@ The intended use case is for cleaning up old archives (particularly photos). The
 
 ## Caching
 
-
+Unless you specify "no-cache", when the program runs, it will save the list of file hashes to a file in the root directories called "delete-files-info-cache.json", to speed up execution the next time it executes. A cache hit occurs when the file size, filename, and date-modified field matches the cached value.
 
 ## Usage
 
