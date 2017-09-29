@@ -9,7 +9,21 @@
   "author": "Michael Hunter",
   "license": "ISC",
   "dependencies": {
+    "@types/lodash": "^4.14.76",
     "argparse": "^1.0.9",
-    "glob": "^7.1.2"
+    "async-throttle": "^1.1.0",
+    "chai": "^4.1.2",
+    "fs-extra": "^4.0.2",
+    "glob": "^7.1.2",
+    "lodash": "^4.17.4",
+    "md5-file": "^3.2.3",
+    "mocha": "^3.5.3",
+    "normalize-path": "^2.1.1",
+    "progress": "^2.0.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4"
   }
 }
