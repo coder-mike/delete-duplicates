@@ -28,7 +28,7 @@ describe('Black box test', function() {
     const outputState = await new Promise((resolve, reject) =>
       glob('temp/**/*', { }, (err, files) => err ? reject(err) : resolve(files)));
     assert.deepEqual(outputState, expectedOutputState)
-    //await fs.remove('temp');
+    await fs.remove('temp');
   }
   it('Works', runTests(false, false, [
     "temp/target",
@@ -40,7 +40,9 @@ describe('Black box test', function() {
     "temp/target/source",
     "temp/target/source/c-different-content.txt",
     "temp/target/source/d-not-in-dest.txt",
-    "temp/target/source/delete-files-info-cache.json"
+    "temp/target/source/delete-files-info-cache.json",
+    "temp/target/source/f-duplicate-in-source-2.txt",
+    "temp/target/source/f-duplicate-in-source.txt",
   ]));
   it('Works with cache', runTests(true, false, [
     "temp/target",
@@ -52,7 +54,9 @@ describe('Black box test', function() {
     "temp/target/source",
     "temp/target/source/c-different-content.txt",
     "temp/target/source/d-not-in-dest.txt",
-    "temp/target/source/delete-files-info-cache.json"
+    "temp/target/source/delete-files-info-cache.json",
+    "temp/target/source/f-duplicate-in-source-2.txt",
+    "temp/target/source/f-duplicate-in-source.txt",
   ]));
   it('Works moving', runTests(false, true, [
     "temp/target",
@@ -65,6 +69,8 @@ describe('Black box test', function() {
     "temp/target/source/c-different-content.txt",
     "temp/target/source/d-not-in-dest.txt",
     "temp/target/source/delete-files-info-cache.json",
+    "temp/target/source/f-duplicate-in-source-2.txt",
+    "temp/target/source/f-duplicate-in-source.txt",
     "temp/to-delete",
     "temp/to-delete/a.txt",
     "temp/to-delete/sub-folder",
