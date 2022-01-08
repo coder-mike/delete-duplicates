@@ -17,3 +17,9 @@ I'm proposing the following upgrades:
   3. When writing cache files, I'll keep the logic of writing only to the directories specified on the CLI, rather than littering cache files everywhere. But when reading cache files, I'll search at all parent levels of the file so that it can find hashes calculated for different subsets/supersets of the specified directory.
 
   4. I'll show the progress bar in MB rather than file count, and I will ignore the files that already appear in the cache.
+
+----
+
+Writing the cache more frequently is actually quite a major refactoring. The reason is that `extractDirInfo` is what computes the cache structure, and it does so in one go at the moment. Then the returned value (the "cache") is saved.
+
+I'm debating whether to upgrade this project to TypeScript.

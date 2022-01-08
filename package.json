@@ -2,15 +2,14 @@
   "name": "delete-duplicates",
   "version": "1.0.0",
   "description": "Deletes files in a directory that are duplicated in another directory",
-  "main": "app.js",
-  "bin": "./app.js",
+  "bin": "./dist/app.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "tsc"
   },
   "author": "Michael Hunter",
   "license": "ISC",
   "dependencies": {
-    "@types/lodash": "^4.14.76",
     "argparse": "^1.0.9",
     "async-throttle": "^1.1.0",
     "chai": "^4.1.2",
@@ -23,11 +22,12 @@
     "progress": "^2.0.0",
     "prompt-confirm": "^1.2.0",
     "ts-node": "^3.3.0",
-    "typescript": "^2.5.3",
+    "typescript": "^4.5.4",
     "write-file-atomic": "^3.0.3",
     "yesno": "0.0.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.0.4"
+    "@types/chai": "^4.0.4",
+    "@types/lodash": "^4.14.178"
   }
 }

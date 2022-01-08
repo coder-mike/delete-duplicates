@@ -19,7 +19,9 @@ Unless you specify "no-cache", when the program runs, it will save the list of f
 ## Usage
 
  - Clone the repo
- - `npm install -g .` to install
+ - `npm install`
+ - `npm run build`
+ - `npm install -g .` to register globally
  - Use anywhere by running `delete-duplicates -h` for instructions
 
 ## Tests
