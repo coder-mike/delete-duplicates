@@ -4,73 +4,73 @@
         {
             "relativePath": "a.txt",
             "hash": "0cc175b9c0f1b6a831c399e269772661",
-            "mtimeMs": 1506644524369.9475,
+            "mtimeMs": 1506644524000,
             "size": 1
         },
         {
             "relativePath": "b-different-name.txt",
             "hash": "92eb5ffee6ae2fec3ad71c777531578f",
-            "mtimeMs": 1506644539308.639,
+            "mtimeMs": 1506644539000,
             "size": 1
         },
         {
             "relativePath": "c-different-content.txt",
             "hash": "81e9bca1cb40b202a28a1aa2377144a8",
-            "mtimeMs": 1506644550525.3928,
+            "mtimeMs": 1506644550000,
             "size": 5
         },
         {
             "relativePath": "delete-files-info-cache.json",
-            "hash": "b95f79396a1a53c284d012102dee3082",
-            "mtimeMs": 1506735677659.968,
-            "size": 2417
+            "hash": "d3058661fa0af28b2f48031881c8441a",
+            "mtimeMs": 1641675888666.4475,
+            "size": 2375
         },
         {
             "relativePath": "e-not-in-source.txt",
             "hash": "e1671797c52e15f763380b45e841ec32",
-            "mtimeMs": 1506644608582.4531,
+            "mtimeMs": 1506644608000,
             "size": 1
         },
         {
             "relativePath": "source/a.txt",
             "hash": "0cc175b9c0f1b6a831c399e269772661",
-            "mtimeMs": 1506644493902.2776,
+            "mtimeMs": 1506644493000,
             "size": 1
         },
         {
             "relativePath": "source/c-different-content.txt",
             "hash": "4a8a08f09d37b73795649038408b5f33",
-            "mtimeMs": 1506644565513,
+            "mtimeMs": 1506644565000,
             "size": 1
         },
         {
             "relativePath": "source/d-not-in-dest.txt",
             "hash": "8277e0910d750195b448797616e091ad",
-            "mtimeMs": 1506644595922.6973,
+            "mtimeMs": 1506644595000,
             "size": 1
         },
         {
             "relativePath": "source/delete-files-info-cache.json",
-            "hash": "53f6ddc7ad570aa52a14b3e3125f4da7",
-            "mtimeMs": 1506735677657.9666,
-            "size": 1402
+            "hash": "1e2b3de01af756b0a5673ad5e46d7b97",
+            "mtimeMs": 1641675888665.4475,
+            "size": 1379
         },
         {
             "relativePath": "source/f-duplicate-in-source-2.txt",
             "hash": "8fa14cdd754f91cc6554c9e71929cce7",
-            "mtimeMs": 1506735504836.0935,
+            "mtimeMs": 1506735504000,
             "size": 1
         },
         {
             "relativePath": "source/f-duplicate-in-source.txt",
             "hash": "8fa14cdd754f91cc6554c9e71929cce7",
-            "mtimeMs": 1506735506946.184,
+            "mtimeMs": 1506735506000,
             "size": 1
         },
         {
             "relativePath": "source/sub-folder/b.txt",
             "hash": "92eb5ffee6ae2fec3ad71c777531578f",
-            "mtimeMs": 1506644502936.1265,
+            "mtimeMs": 1506644502000,
             "size": 1
         }
     ]

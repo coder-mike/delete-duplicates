@@ -4,43 +4,43 @@
         {
             "relativePath": "a.txt",
             "hash": "0cc175b9c0f1b6a831c399e269772661",
-            "mtimeMs": 1506644493902.2776,
+            "mtimeMs": 1506644493000,
             "size": 1
         },
         {
             "relativePath": "c-different-content.txt",
             "hash": "4a8a08f09d37b73795649038408b5f33",
-            "mtimeMs": 1506644565513,
+            "mtimeMs": 1506644565000,
             "size": 1
         },
         {
             "relativePath": "d-not-in-dest.txt",
             "hash": "8277e0910d750195b448797616e091ad",
-            "mtimeMs": 1506644595922.6973,
+            "mtimeMs": 1506644595000,
             "size": 1
         },
         {
             "relativePath": "delete-files-info-cache.json",
-            "hash": "53f6ddc7ad570aa52a14b3e3125f4da7",
-            "mtimeMs": 1506735677657.9666,
-            "size": 1402
+            "hash": "1e2b3de01af756b0a5673ad5e46d7b97",
+            "mtimeMs": 1641675888665.4475,
+            "size": 1379
         },
         {
             "relativePath": "f-duplicate-in-source-2.txt",
             "hash": "8fa14cdd754f91cc6554c9e71929cce7",
-            "mtimeMs": 1506735504836.0935,
+            "mtimeMs": 1506735504000,
             "size": 1
         },
         {
             "relativePath": "f-duplicate-in-source.txt",
             "hash": "8fa14cdd754f91cc6554c9e71929cce7",
-            "mtimeMs": 1506735506946.184,
+            "mtimeMs": 1506735506000,
             "size": 1
         },
         {
             "relativePath": "sub-folder/b.txt",
             "hash": "92eb5ffee6ae2fec3ad71c777531578f",
-            "mtimeMs": 1506644502936.1265,
+            "mtimeMs": 1506644502000,
             "size": 1
         }
     ]

@@ -12,7 +12,7 @@ The intended use case is for cleaning up old archives (particularly photos). The
 
 ## Caching
 
-Unless you specify "no-cache", when the program runs, it will save the list of file hashes to a file in the root directories called "delete-files-info-cache.json", to speed up execution the next time it executes. A cache hit occurs when the file size, filename, and date-modified field matches the cached value.
+Unless you specify "no-cache", when the program runs, it will save the list of file hashes to a file in the root directories called "delete-files-info-cache.json", to speed up execution the next time it executes. A cache hit occurs when the file size, filename, and date-modified field matches the cached value. The cache is saved as a JSON file names `delete-files-info-cache.json` in each of the directories specified.
 
 ## Usage
 
