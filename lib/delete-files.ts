@@ -1,15 +1,15 @@
 const enumerateFilesInFolder = require('./enumerate-files-in-folder');
 const ProgressBar = require('progress');
-const _ = require('lodash');
+import _ = require('lodash');
 const md5File = require('md5-file/promise');
 const createThrottle = require('async-throttle');
 const chooseFilesToDelete = require('./choose-files-to-delete');
 const fs = require('fs-extra');
-const path = require('path');
+import path = require('path');
 const Confirm = require('prompt-confirm');
 const glob = require('glob');
 const normalizePath = require('normalize-path');
-const writeFileAtomic = require('write-file-atomic')
+import writeFileAtomic = require('write-file-atomic')
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -19,8 +19,8 @@ module.exports = async function ({ source, target, dry, silent, moveTo, noCache 
 
   log('Enumerating files...');
   const [sourceDir, ...destDirectories] = await Promise.all([
-    enumerateFilesInFolder(source),
-    ...target.map(enumerateFilesInFolder)
+    enumerateFilesInFolderExceptCacheFiles(source),
+    ...target.map(enumerateFilesInFolderExceptCacheFiles)
   ]);
   const totalFilesInDest = destDirectories.reduce((t, d) => t + d.files.length, 0);
   log(`Found ${sourceDir.files.length} files in source directory "${source}"`);
@@ -71,7 +71,8 @@ module.exports = async function ({ source, target, dry, silent, moveTo, noCache 
   const destDirInfos = await Promise.all(destDirectories.map(extractDirInfo));
 
   // Save cache for next time
-  const saveCache = cache => writeFileAtomic(cacheFilename(cache[pathSymbol]), JSON.stringify(cache, null, 4));
+  // Note: I tried to use `writeFileAtomic` but it seems to introduce nondeterminism into the tests
+  const saveCache = cache => fs.writeFile(cacheFilename(cache[pathSymbol]), JSON.stringify(cache, null, 4));
   await saveCache(sourceDirInfo);
   await Promise.all(destDirInfos.map(saveCache));
 
@@ -137,9 +138,9 @@ module.exports = async function ({ source, target, dry, silent, moveTo, noCache 
   async function deleteEmptyDirectories(directoryInfo) {
     const dirMap = new Map();
     const rootPath = directoryInfo.path;
-    const files = await new Promise((resolve, reject) =>
+    const files = await new Promise<any>((resolve, reject) =>
       glob(`${rootPath}/**/*`, { nodir: true, dot: true }, (err, files) => err ? reject(err) : resolve(files)));
-    const dirs = await new Promise((resolve, reject) =>
+    const dirs = await new Promise<any>((resolve, reject) =>
       glob(`${rootPath}/**/*/`, { dot: true }, (err, files) => err ? reject(err) : resolve(files)));
 
     for (const dir of dirs) {
@@ -184,3 +185,13 @@ module.exports = async function ({ source, target, dry, silent, moveTo, noCache 
   }
 }
 
+async function enumerateFilesInFolderExceptCacheFiles(directory: string) {
+  const files = await enumerateFilesInFolder(directory);
+  return {
+    path: files.path,
+    files: files.files.filter(f => {
+      const filename = path.basename(f);
+      return filename !== 'delete-files-info-cache.json' && filename !== '.delete-files-info-cache.json'
+    })
+  };
+}

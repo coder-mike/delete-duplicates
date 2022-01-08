@@ -20,12 +20,6 @@
             "size": 5
         },
         {
-            "relativePath": "delete-files-info-cache.json",
-            "hash": "16f6cd61ad78220b365cb84d43eb3660",
-            "mtimeMs": 1641680086886.3545,
-            "size": 2376
-        },
-        {
             "relativePath": "e-not-in-source.txt",
             "hash": "e1671797c52e15f763380b45e841ec32",
             "mtimeMs": 1506644608000,
@@ -48,12 +42,6 @@
             "hash": "8277e0910d750195b448797616e091ad",
             "mtimeMs": 1506644595000,
             "size": 1
-        },
-        {
-            "relativePath": "source/delete-files-info-cache.json",
-            "hash": "4e9a46e295e05e1b6b17a2d8b37bcc64",
-            "mtimeMs": 1641680086884.354,
-            "size": 1379
         },
         {
             "relativePath": "source/f-duplicate-in-source-2.txt",

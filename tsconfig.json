@@ -2,10 +2,11 @@
   "compilerOptions": {
     "outDir": "./dist",
     "allowJs": true,
-    "target": "es6"
+    "target": "es6",
+    "module": "CommonJS"
   },
   "include": [
-    "app.js",
+    "app.ts",
     "./lib/**/*"
   ],
   "exclude": [

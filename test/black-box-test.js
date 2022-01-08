@@ -27,7 +27,7 @@ describe('Black box test', function() {
     });
     const outputState = await new Promise((resolve, reject) =>
       glob('temp/**/*', { }, (err, files) => err ? reject(err) : resolve(files)));
-    assert.deepEqual(outputState, expectedOutputState)
+    assert.deepEqual(outputState, expectedOutputState);
     await fs.remove('temp');
   }
   it('Works', runTests(false, false, [

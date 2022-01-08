@@ -18,6 +18,10 @@ I'm proposing the following upgrades:
 
   4. I'll show the progress bar in MB rather than file count, and I will ignore the files that already appear in the cache.
 
+  5. TODO also: I want to verify that the algorithm will not just die in the middle if one of the found files goes missing before the hash is calculated (e.g. if the user is also manually cleaning up while running the program).
+
+  6. TODO: The cache file should be named starting with `.`
+
 ----
 
 Writing the cache more frequently is actually quite a major refactoring. The reason is that `extractDirInfo` is what computes the cache structure, and it does so in one go at the moment. Then the returned value (the "cache") is saved.

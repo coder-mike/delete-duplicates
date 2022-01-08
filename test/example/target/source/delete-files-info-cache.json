@@ -20,12 +20,6 @@
             "size": 1
         },
         {
-            "relativePath": "delete-files-info-cache.json",
-            "hash": "4e9a46e295e05e1b6b17a2d8b37bcc64",
-            "mtimeMs": 1641680086884.354,
-            "size": 1379
-        },
-        {
             "relativePath": "f-duplicate-in-source-2.txt",
             "hash": "8fa14cdd754f91cc6554c9e71929cce7",
             "mtimeMs": 1506735504000,
