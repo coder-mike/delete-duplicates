@@ -21,9 +21,9 @@
         },
         {
             "relativePath": "delete-files-info-cache.json",
-            "hash": "d3058661fa0af28b2f48031881c8441a",
-            "mtimeMs": 1641675888666.4475,
-            "size": 2375
+            "hash": "a7e4452da557e0bd4118f6091717ed43",
+            "mtimeMs": 1641676414052.8264,
+            "size": 2376
         },
         {
             "relativePath": "e-not-in-source.txt",
@@ -51,8 +51,8 @@
         },
         {
             "relativePath": "source/delete-files-info-cache.json",
-            "hash": "1e2b3de01af756b0a5673ad5e46d7b97",
-            "mtimeMs": 1641675888665.4475,
+            "hash": "fe87b3ac938351c25b35c29d751f89a4",
+            "mtimeMs": 1641676414050.8254,
             "size": 1379
         },
         {
