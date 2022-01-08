@@ -10,6 +10,8 @@ The intended use case is for cleaning up old archives (particularly photos). The
  - The directory for deletion (named the "source") may overlap with the directory for duplicates (the "targets"). For example, to delete files that are "elsewhere" in the set of directories.
  - If a file exists multiple times in the source directory, these are not considered to be duplicates of each other, even if the source directory is a subdirectory of the target. The reason for this, is so that any files left over in the source directory maintain a "clean" structure, rather than randomly choosing which of the multiple duplicates to delete and thus potentially choosing the "wrong" duplicate. These will be issued as warnings.
 
+Before the program actually deletes/moves any files, the CLI will prompt with an `Are you sure?` message. As it does so, there will be a `delete-files.txt` in the directory in which you run the command, detailing the list of changes that will be made.
+
 ## Caching
 
 Unless you specify "no-cache", when the program runs, it will save the list of file hashes to a file in the root directories called "delete-files-info-cache.json", to speed up execution the next time it executes. A cache hit occurs when the file size, filename, and date-modified field matches the cached value. The cache is saved as a JSON file names `delete-files-info-cache.json` in each of the directories specified.
@@ -19,7 +21,6 @@ Unless you specify "no-cache", when the program runs, it will save the list of f
  - Clone the repo
  - `npm install -g .` to install
  - Use anywhere by running `delete-duplicates -h` for instructions
-
 
 ## Tests
 
